@@ -1,0 +1,135 @@
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Registrar solicitud ---
+Legajo del estudiante: El estudiante no existe. Desea registrarlo? (s/n): Nombre: Apellido: Email: Carrera: Tipos de solicitud:
+1. Certificado
+2. Equivalencia
+3. Reclamo de nota
+4. Cambio de comision
+5. Otro
+Tipo: Descripcion: Solicitud registrada con ID 1 - Prioridad: Baja
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Registrar solicitud ---
+Legajo del estudiante: Tipos de solicitud:
+1. Certificado
+2. Equivalencia
+3. Reclamo de nota
+4. Cambio de comision
+5. Otro
+Tipo: Descripcion: Solicitud registrada con ID 2 - Prioridad: Media
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Registrar solicitud ---
+Legajo del estudiante: Tipos de solicitud:
+1. Certificado
+2. Equivalencia
+3. Reclamo de nota
+4. Cambio de comision
+5. Otro
+Tipo: Descripcion: Solicitud registrada con ID 3 - Prioridad: Alta
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Registrar solicitud ---
+Legajo del estudiante: Tipos de solicitud:
+1. Certificado
+2. Equivalencia
+3. Reclamo de nota
+4. Cambio de comision
+5. Otro
+Tipo: Descripcion: Solicitud registrada con ID 4 - Prioridad: Media
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Registrar solicitud ---
+Legajo del estudiante: Tipos de solicitud:
+1. Certificado
+2. Equivalencia
+3. Reclamo de nota
+4. Cambio de comision
+5. Otro
+Tipo: Descripcion: Solicitud registrada con ID 5 - Prioridad: Baja
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Registrar solicitud ---
+Legajo del estudiante: Tipos de solicitud:
+1. Certificado
+2. Equivalencia
+3. Reclamo de nota
+4. Cambio de comision
+5. Otro
+Tipo: Descripcion: Solicitud registrada con ID 6 - Prioridad: Alta
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Buscar solicitudes (Enter para omitir un filtro) ---
+Estado (P/E/R/C/X): Tipo (texto): Prioridad (1/2/3): ID responsable: 6 solicitud(es) encontrada(s):
+#1 | <fecha> | Ana Lopez (1001) | Certificado | Baja | Pendiente | Sin asignar
+    Certificado de alumno regular
+#2 | <fecha> | Ana Lopez (1001) | Equivalencia | Media | Pendiente | Sin asignar
+    Equivalencia de Matematica I
+#3 | <fecha> | Ana Lopez (1001) | Reclamo de nota | Alta | Pendiente | Sin asignar
+    Reclamo nota final de Ingles
+#4 | <fecha> | Ana Lopez (1001) | Cambio de comision | Media | Pendiente | Sin asignar
+    Cambio a la comision 5 por trabajo
+#5 | <fecha> | Ana Lopez (1001) | Otro | Baja | Pendiente | Sin asignar
+    Consulta sobre mesas de examen
+#6 | <fecha> | Ana Lopez (1001) | Certificado | Alta | Pendiente | Sin asignar
+    Certificado URGENTE para la beca
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: Chau!

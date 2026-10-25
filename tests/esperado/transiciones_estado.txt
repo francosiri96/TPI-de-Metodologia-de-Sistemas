@@ -1,0 +1,176 @@
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Registrar solicitud ---
+Legajo del estudiante: El estudiante no existe. Desea registrarlo? (s/n): Nombre: Apellido: Email: Carrera: Tipos de solicitud:
+1. Certificado
+2. Equivalencia
+3. Reclamo de nota
+4. Cambio de comision
+5. Otro
+Tipo: Descripcion: Solicitud registrada con ID 1 - Prioridad: Alta
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Registrar solicitud ---
+Legajo del estudiante: Tipos de solicitud:
+1. Certificado
+2. Equivalencia
+3. Reclamo de nota
+4. Cambio de comision
+5. Otro
+Tipo: Descripcion: Solicitud registrada con ID 2 - Prioridad: Baja
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Cambiar estado ---
+ID de la solicitud: Estado actual: Pendiente
+P=Pendiente, E=En proceso, R=Resuelta, C=Cerrada, X=Rechazada
+Nuevo estado: No se puede pasar a En proceso sin responsable asignado
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Cambiar estado ---
+ID de la solicitud: Estado actual: Pendiente
+P=Pendiente, E=En proceso, R=Resuelta, C=Cerrada, X=Rechazada
+Nuevo estado: Transicion no permitida de Pendiente a Resuelta
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Asignar responsable ---
+ID de la solicitud: 1 - Laura Gomez (Alumnado)
+2 - Martin Ruiz (Secretaria Academica)
+3 - Sofia Herrera (Tesoreria)
+4 - Diego Paz (Bedelia)
+ID del responsable: Responsable Martin Ruiz asignado a la solicitud 1
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Cambiar estado ---
+ID de la solicitud: Estado actual: Pendiente
+P=Pendiente, E=En proceso, R=Resuelta, C=Cerrada, X=Rechazada
+Nuevo estado: Estado actualizado a En proceso
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Cambiar estado ---
+ID de la solicitud: Estado actual: En proceso
+P=Pendiente, E=En proceso, R=Resuelta, C=Cerrada, X=Rechazada
+Nuevo estado: Transicion no permitida de En proceso a Pendiente
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Cambiar estado ---
+ID de la solicitud: Estado actual: En proceso
+P=Pendiente, E=En proceso, R=Resuelta, C=Cerrada, X=Rechazada
+Nuevo estado: Estado actualizado a Resuelta
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Cambiar estado ---
+ID de la solicitud: Estado actual: Resuelta
+P=Pendiente, E=En proceso, R=Resuelta, C=Cerrada, X=Rechazada
+Nuevo estado: Estado actualizado a Cerrada
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Cambiar estado ---
+ID de la solicitud: Estado actual: Cerrada
+P=Pendiente, E=En proceso, R=Resuelta, C=Cerrada, X=Rechazada
+Nuevo estado: Transicion no permitida de Cerrada a Rechazada
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Cambiar estado ---
+ID de la solicitud: Estado actual: Pendiente
+P=Pendiente, E=En proceso, R=Resuelta, C=Cerrada, X=Rechazada
+Nuevo estado: Estado actualizado a Rechazada
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Cambiar estado ---
+ID de la solicitud: Estado actual: Rechazada
+P=Pendiente, E=En proceso, R=Resuelta, C=Cerrada, X=Rechazada
+Nuevo estado: Transicion no permitida de Rechazada a En proceso
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: Chau!

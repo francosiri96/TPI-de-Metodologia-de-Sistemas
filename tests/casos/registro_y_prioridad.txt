@@ -1,0 +1,35 @@
+1
+1001
+s
+Ana
+Lopez
+ana@mail.com
+TUP
+1
+Certificado de alumno regular
+1
+1001
+2
+Equivalencia de Matematica I
+1
+1001
+3
+Reclamo nota final de Ingles
+1
+1001
+4
+Cambio a la comision 5 por trabajo
+1
+1001
+5
+Consulta sobre mesas de examen
+1
+1001
+1
+Certificado URGENTE para la beca
+4
+
+
+
+
+0

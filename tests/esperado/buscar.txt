@@ -1,0 +1,207 @@
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Registrar solicitud ---
+Legajo del estudiante: El estudiante no existe. Desea registrarlo? (s/n): Nombre: Apellido: Email: Carrera: Tipos de solicitud:
+1. Certificado
+2. Equivalencia
+3. Reclamo de nota
+4. Cambio de comision
+5. Otro
+Tipo: Descripcion: Solicitud registrada con ID 1 - Prioridad: Alta
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Registrar solicitud ---
+Legajo del estudiante: El estudiante no existe. Desea registrarlo? (s/n): Nombre: Apellido: Email: Carrera: Tipos de solicitud:
+1. Certificado
+2. Equivalencia
+3. Reclamo de nota
+4. Cambio de comision
+5. Otro
+Tipo: Descripcion: Solicitud registrada con ID 2 - Prioridad: Baja
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Registrar solicitud ---
+Legajo del estudiante: Tipos de solicitud:
+1. Certificado
+2. Equivalencia
+3. Reclamo de nota
+4. Cambio de comision
+5. Otro
+Tipo: Descripcion: Solicitud registrada con ID 3 - Prioridad: Media
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Registrar solicitud ---
+Legajo del estudiante: Tipos de solicitud:
+1. Certificado
+2. Equivalencia
+3. Reclamo de nota
+4. Cambio de comision
+5. Otro
+Tipo: Descripcion: Solicitud registrada con ID 4 - Prioridad: Media
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Asignar responsable ---
+ID de la solicitud: 1 - Laura Gomez (Alumnado)
+2 - Martin Ruiz (Secretaria Academica)
+3 - Sofia Herrera (Tesoreria)
+4 - Diego Paz (Bedelia)
+ID del responsable: Responsable Martin Ruiz asignado a la solicitud 1
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Cambiar estado ---
+ID de la solicitud: Estado actual: Pendiente
+P=Pendiente, E=En proceso, R=Resuelta, C=Cerrada, X=Rechazada
+Nuevo estado: Estado actualizado a En proceso
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Buscar solicitudes (Enter para omitir un filtro) ---
+Estado (P/E/R/C/X): Tipo (texto): Prioridad (1/2/3): ID responsable: 3 solicitud(es) encontrada(s):
+#2 | <fecha> | Juan Perez (2002) | Certificado | Baja | Pendiente | Sin asignar
+    Certificado de alumno regular
+#3 | <fecha> | Juan Perez (2002) | Equivalencia | Media | Pendiente | Sin asignar
+    Equivalencia de Matematica I
+#4 | <fecha> | Ana Lopez (1001) | Cambio de comision | Media | Pendiente | Sin asignar
+    Cambio de comision por trabajo
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Buscar solicitudes (Enter para omitir un filtro) ---
+Estado (P/E/R/C/X): Tipo (texto): Prioridad (1/2/3): ID responsable: 1 solicitud(es) encontrada(s):
+#2 | <fecha> | Juan Perez (2002) | Certificado | Baja | Pendiente | Sin asignar
+    Certificado de alumno regular
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Buscar solicitudes (Enter para omitir un filtro) ---
+Estado (P/E/R/C/X): Tipo (texto): Prioridad (1/2/3): ID responsable: 2 solicitud(es) encontrada(s):
+#3 | <fecha> | Juan Perez (2002) | Equivalencia | Media | Pendiente | Sin asignar
+    Equivalencia de Matematica I
+#4 | <fecha> | Ana Lopez (1001) | Cambio de comision | Media | Pendiente | Sin asignar
+    Cambio de comision por trabajo
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Buscar solicitudes (Enter para omitir un filtro) ---
+Estado (P/E/R/C/X): Tipo (texto): Prioridad (1/2/3): ID responsable: 1 solicitud(es) encontrada(s):
+#1 | <fecha> | Ana Lopez (1001) | Reclamo de nota | Alta | En proceso | Martin Ruiz
+    Reclamo por nota del parcial
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Buscar solicitudes (Enter para omitir un filtro) ---
+Estado (P/E/R/C/X): Tipo (texto): Prioridad (1/2/3): ID responsable: 1 solicitud(es) encontrada(s):
+#1 | <fecha> | Ana Lopez (1001) | Reclamo de nota | Alta | En proceso | Martin Ruiz
+    Reclamo por nota del parcial
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Buscar solicitudes (Enter para omitir un filtro) ---
+Estado (P/E/R/C/X): Tipo (texto): Prioridad (1/2/3): ID responsable: 4 solicitud(es) encontrada(s):
+#1 | <fecha> | Ana Lopez (1001) | Reclamo de nota | Alta | En proceso | Martin Ruiz
+    Reclamo por nota del parcial
+#2 | <fecha> | Juan Perez (2002) | Certificado | Baja | Pendiente | Sin asignar
+    Certificado de alumno regular
+#3 | <fecha> | Juan Perez (2002) | Equivalencia | Media | Pendiente | Sin asignar
+    Equivalencia de Matematica I
+#4 | <fecha> | Ana Lopez (1001) | Cambio de comision | Media | Pendiente | Sin asignar
+    Cambio de comision por trabajo
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: --- Buscar solicitudes (Enter para omitir un filtro) ---
+Estado (P/E/R/C/X): Tipo (texto): Prioridad (1/2/3): ID responsable: No se encontraron solicitudes
+
+===== SISTEMA DE SOLICITUDES ACADEMICAS =====
+1. Registrar solicitud
+2. Cambiar estado de solicitud
+3. Asignar responsable
+4. Buscar / filtrar solicitudes
+5. Reporte
+6. Eliminar solicitud
+0. Salir
+Opcion: Chau!
