@@ -51,10 +51,10 @@ Criterio de prioridad:
 | 6 | Cadenas de if/elif (viola OCP) | prioridad por tipo, transiciones, nombres de estado | Media |
 | 7 | Manejo de Exepciones silencioso |cargar(), reg_sol(),cambiar_estado(),asignar(),eliminar() | Alta |
 | 8 | Nombres pobres de variables |Presente en todo el script (ej. cargar(),menu(),filtrar()) | Media |
-| 9 | PENDIENTE | | |
-| 10 | PENDIENTE | | |
-| 11 | PENDIENTE | | |
-| 12 | PENDIENTE | | |
+| 9 | Primitive Obssesion | En todo el sistema | Alta |
+| 10 | Acoplamiento fuerte al almacenamiento fisico | cargar(),agregar(),cambiar_estado(),etc | Media |
+| 11 | Código muerto (Dead Code) | Línea 7 del código original. | Baja |
+| 12 | Desnormalización y duplicación de datos | Método agregar() | Media |
 
 ---
 
@@ -249,6 +249,49 @@ c) Buscar un responsable por ID se repite en `asignar` (243) y en `buscar` (269)
 
 
 
-## Etapa-Diagnostico
+### Smells 9 Primitive Obsession
 
+**Ubicación:** En todo el sistema (manipulación directa de claves como s["estado"], s["resp"], etc.)
+
+**Evidencia:** Las entidades del dominio (estudiantes, responsables, solicitudes) se manejan como diccionarios puros basados en claves de texto plano en lugar de clases u objetos tipados con métodos propios.
+
+**Impacto:** Alto acoplamiento a estructuras de datos primitivas, propenso a errores tipográficos, ausencia de autocompletado y validación de tipos tardía.
+
+**Prioridad de corrección:** Alta.
+
+
+### Smells 10 Acoplamiento fuerte al almacenamiento fisico
+
+**Ubicación:** Funciones cargar(), agregar(), cambiar_estado(), asignar(), eliminar().
+
+**Evidencia:** La lógica de negocio y las funciones de interfaz interactúan de manera directa con operaciones de archivos de texto plano mediante json.load() y json.dump(), sin ninguna abstracción o capa de repositorio de datos.
+
+**Impacto:** Imposibilita la migración a otro sistema de persistencia (como una base de datos relacional) sin reescribir prácticamente toda la aplicación.
+
+**Prioridad de corrección:** Meida.
+
+### Smells 11 Codigo muerto (Dead Code)
+
+**Ubicación:** Línea 7 del código original.
+
+**Evidencia:** Declaración de la variable global cont = 0  # contador de solicitudes, la cual nunca se lee ni se modifica en ninguna parte del script.
+
+**Impacto:** Genera ruido visual y confusión en quien lee el código, haciéndole creer que existe un mecanismo contador activo.
+
+**Prioridad de corrección:** Baja. Se corrige dandole una funcionalidad a la variable o eliminandola si su uso no es necesario.
+
+
+### Smells 12 Desnormalización y duplicación de datos
+
+**Ubicación:** Método agregar().
+
+**Evidencia:** El nombre completo del estudiante ("nombre_est": nom + " " + ape) se almacena duplicado dentro de cada solicitud en lugar de resolverse dinámicamente mediante la relación con el legajo del estudiante.
+
+**Impacto:** Si un estudiante actualiza sus datos personales (nombre o apellido), las solicitudes históricas mantendrán el nombre viejo, generando inconsistencia de datos.
+
+**Prioridad de corrección:** Media.
+
+
+
+## Etapa-Diagnostico
 PENDIENTE
