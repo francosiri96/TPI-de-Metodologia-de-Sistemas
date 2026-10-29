@@ -4,7 +4,33 @@ Versión analizada: tag `estado-inicial`, archivo `solicitudes.py` (356 líneas,
 
 ## 1. Calidad externa vs. calidad interna (Etapa 2)
 
-PENDIENTE
+1. Calidad Externa (La mirada del usuario)
+La calidad externa se refiere a cómo se comporta el software ante los ojos de los usuarios finales (en este caso, el personal administrativo que gestiona las solicitudes académicas). Desde esta perspectiva, el sistema funciona correctamente y cumple con los requerimientos planteados:
+
+- **Flujo completo de negocio**: El menú interactivo permite realizar todas las operaciones esperadas: registrar estudiantes (con validaciones básicas de email y campos vacíos), crear solicitudes, asignar prioridades automáticas (según el tipo o la palabra clave "urgente"), cambiar estados mediante una máquina de estados controlada (Pendiente -> En Proceso -> Resuelta -> Cerrada), asignar responsables, filtrar, emitir reportes con estadísticas y eliminar registros.
+
+- **Persistencia de datos**: Los datos se guardan de forma persistente en un archivo JSON (datos.json), lo que evita la pérdida de información al cerrar la aplicación.
+
+- **Experiencia interactiva inmediata**: La interfaz de consola es directa y proporciona realimentación textual clara de lo que va ocurriendo en cada paso.
+
+
+2. Calidad Interna(La mirada del desarrollador)
+
+La calidad interna abarca la arquitectura del código, su diseño, legibilidad y mantenibilidad. Desde esta perspectiva, el código presenta importantes deficiencias y deudas técnicas:
+
+ - **Acoplamiento extremo (UI y Lógica mezcladas)**: Toda la lógica de negocio, validaciones y reglas de transición de estados están fuertemente acopladas con las operaciones de E/S de consola (input() y print()). No hay separación de responsabilidades.
+
+- **Nombres crípticos y legibilidad reducida**: Se utilizan variables de una sola letra (d, e, f, s, al, rid, t, leg), lo que dificulta la lectura y comprensión del código por otros desarrolladores (o por el mismo autor tiempo después).
+
+- **Código muerto**: Se declara una variable global cont = 0  # contador de solicitudes al inicio del script que jamás se utiliza en todo el programa.
+
+
+3. Relación: Funcionalidad Visible vs. Mantenibilidad, Legibilidad y Evolución Futura
+
+
+- **Legibilidad y Mantenibilidad**: Al carecer de una estructura modular (clases especializadas, separación entre modelos de datos, persistencia y vistas), cualquier modificación simple —como cambiar el formato de la fecha, agregar un nuevo campo al estudiante o modificar la regla de una prioridad— requiere modificar funciones extensas donde todo está mezclado. Esto aumenta drásticamente el riesgo de introducir bugs colaterales.
+
+- **Evolución Futura bloqueada**: Debido a que la lógica está atrapada en funciones de consola (input/print), es imposible evolucionar este sistema hacia una interfaz web (ej. Flask o FastAPI), una API REST o una interfaz gráfica de escritorio. Para hacerlo, prácticamente habría que reescribir todo el código desde cero, ya que la lógica de negocio no puede reutilizarse de forma independiente.
 
 ## 2. Deuda técnica y code smells (Etapa 3)
 
@@ -23,8 +49,8 @@ Criterio de prioridad:
 | 4 | Código duplicado | guardado del JSON, búsqueda por ID | Alta |
 | 5 | Magic strings / magic numbers | estados, prioridades, cantidad de tipos | Media |
 | 6 | Cadenas de if/elif (viola OCP) | prioridad por tipo, transiciones, nombres de estado | Media |
-| 7 | PENDIENTE | | |
-| 8 | PENDIENTE | | |
+| 7 | Manejo de Exepciones silencioso |cargar(), reg_sol(),cambiar_estado(),asignar(),eliminar() | Alta |
+| 8 | Nombres pobres de variables |Presente en todo el script (ej. cargar(),menu(),filtrar()) | Media |
 | 9 | PENDIENTE | | |
 | 10 | PENDIENTE | | |
 | 11 | PENDIENTE | | |
@@ -199,6 +225,30 @@ c) Buscar un responsable por ID se repite en `asignar` (243) y en `buscar` (269)
 
 ---
 
-### Smells 7 a 12
+### Smells 7 Manejo de Exepciones silencioso
+
+**Ubicación:** Funciones cargar(), reg_sol(), cambiar_estado(), asignar() y filtrar().
+
+**Evidencia:** Uso de bloques except: vacíos o sin especificar el tipo de excepción (ej. except: en cargar()), lo cual captura incluso interrupciones del sistema (KeyboardInterrupt), además de ocultar errores en filtrar() mediante pass.
+
+**Impacto:** Enmascara fallos reales de programación o corrupción de archivos, dificultando el debugging y provocando comportamientos erráticos silenciosos.
+
+**Prioridad:** Alta. Se corrige capturando excepciones especificas, y si ocurren errores debe informarse al usuario o registrarse(log)
+
+### Smells 8 Nombres pobres de variables
+
+**Ubicacion:** Presente en todo el script (ej. cargar(), menu(), filtrar()).
+
+**Evidencia:** Uso masivo de identificadores crípticos o abreviados como d (para los datos globales), x / x2 (para iteraciones), al (para alertas), enc (bandera de encontrado) y id.
+
+
+**Impacto:** Dificulta severamente la lectura, comprensión y legibilidad del código. Obliga al desarrollador a retener en mente el contexto de abreviaturas ambiguas
+
+
+**Prioridad:** Media. A medida que crezca el código, las variables genéricas causarán confusión y errores por colisión de nombres. Pero se corrige cambiando el nombre de las variables y asignandoles nombres mas especificos para su funcion o lo que guardan.
+
+
+
+## Etapa-Diagnostico
 
 PENDIENTE
